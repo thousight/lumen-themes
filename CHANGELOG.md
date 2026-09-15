@@ -1,3 +1,9 @@
+## [0.4.2](https://github.com/thousight/lumen-themes/compare/v0.4.1...v0.4.2) (2026-09-15)
+
+### Bug Fixes
+
+* **theme:** align workbench controls with both palettes ([#12](https://github.com/thousight/lumen-themes/issues/12)) ([0addd8b](https://github.com/thousight/lumen-themes/commit/0addd8b1176d01e1e6a87094dd8e43640f31ed85))
+
 ## [0.4.1](https://github.com/thousight/lumen-themes/compare/v0.4.0...v0.4.1) (2026-09-08)
 
 ### Bug Fixes
