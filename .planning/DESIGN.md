@@ -20,6 +20,12 @@ Blanc uses neutral selection and hover backgrounds and a muted syntax palette. P
 
 Noir combines a neutral workbench with orange control-flow and action accents. Its cursor is neutral. Syntax, bracket colors, Git decorations, diagnostics, and terminal ANSI colors also use muted hues. Earlier monochromatic-only plans describe historical intent, not the current palette.
 
+Focus outlines, activity badges, and progress bars use each variant's action accent: muted blue for Blanc and orange for Noir. Links and search-result labels use muted blue in Blanc and soft blue in Noir. Remote status indicators retain the primary surface with accented text.
+
+Inputs, dropdowns, and editor widgets share the primary surface and subtle borders. Menus, checkboxes, the Command Palette, suggestions, hovers, and notifications inherit these shared colors. Selected rows retain the theme's normal text color on neutral selection backgrounds. Preserve VS Code's derived hover and inactive colors where they already follow the palette.
+
+Built-in diagnostics and input validation distinguish muted red errors, amber warnings, and blue information. Validation backgrounds use opaque, lightly tinted surfaces. Find matches use the action accent with a legible foreground and a translucent tint for other matches.
+
 ## Syntax and language coverage
 
 Use ordinary font weight and style for programming syntax; bold and italics are allowed for markup structure. Both variants enable semantic highlighting. Review TextMate rules and semantic token rules together so language-server highlighting preserves the intended hierarchy.
