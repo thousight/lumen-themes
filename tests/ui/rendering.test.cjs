@@ -1,6 +1,6 @@
 const assert = require("node:assert/strict");
 const { writeFile } = require("node:fs/promises");
-const { By, VSBrowser } = require("vscode-extension-tester");
+const { ActivityBar, By, VSBrowser } = require("vscode-extension-tester");
 
 function rgb(hex) {
   const value = hex.slice(1, 7);
@@ -68,6 +68,15 @@ describe("Lumen rendering", function () {
     }
 
     await browser.takeScreenshot(`lumen-${process.env.LUMEN_THEME_SLUG}`);
+    if (process.env.LUMEN_THEME_SLUG === "blanc") {
+      await (await new ActivityBar().getViewControl("Explorer")).openView();
+      const selector = ".part.sidebar .monaco-button:not(.secondary)";
+      const button = await waitForColor(driver, selector, "backgroundColor", rgb("#496d91"));
+      await waitForColor(driver, selector, "color", rgb("#f7f7f4"));
+      await driver.actions().move({ origin: button }).perform();
+      await waitForColor(driver, selector, "backgroundColor", rgb("#3f607f"));
+      await browser.takeScreenshot("lumen-blanc-button-hover");
+    }
     await writeFile(process.env.LUMEN_RESULT_FILE, "passed\n");
   });
 });
