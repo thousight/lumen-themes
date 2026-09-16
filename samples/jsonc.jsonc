@@ -1,0 +1,7 @@
+// Configuration with comments and trailing commas
+{
+  "title": "Paper lantern",
+  "enabled": true,
+  "count": 42,
+  "nested": { "label": "Warm light" },
+}

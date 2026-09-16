@@ -20,7 +20,7 @@ Semantic-release and its locked plugins determine the version, update `CHANGELOG
 | `npm run test:compat` | Checks extension discovery in VS Code 1.80.0 |
 | `npm run test:all` | Runs every check above |
 
-The UI test installs the built VSIX into isolated profiles. It waits for each theme, checks workbench and syntax colors, and rejects zero discovered tests. Blanc must keep its warm-white status bar in the Extension Development Host; Noir keeps the pinned VS Code purple default there. Exact color assertions are limited to the tested scenes and versions.
+The UI test installs the built VSIX and pinned TOML/dotenv grammar extensions into isolated profiles. It checks both themes with semantic highlighting enabled and disabled, verifies workbench surfaces and specific tokens in the language samples, and requires every test to complete. Both status bars retain their primary background; Blanc also has a visible active-tab underline. Exact color assertions are limited to the tested scenes, grammar extensions, and VS Code version; see [the sample index](../samples/README.md).
 
 CI runs desktop tests through Xvfb on `ubuntu-24.04`. Action revisions, Node 24 LTS, VS Code, and development dependencies are pinned. Failure diagnostics include hidden ExTester screenshots and logs.
 

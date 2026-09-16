@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<lantern xmlns:paper="urn:example:paper" title="Warm light">
+  <paper:label paper:kind="soft">Paper &amp; light</paper:label>
+</lantern>

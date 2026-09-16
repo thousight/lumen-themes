@@ -1,0 +1,7 @@
+{
+  "Paper lantern": {
+    "prefix": "lantern",
+    "body": ["console.log('${1:message}');", "$0"],
+    "description": "Warm light"
+  }
+}

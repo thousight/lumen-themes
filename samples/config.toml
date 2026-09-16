@@ -1,0 +1,9 @@
+# Even Better TOML grammar
+[lantern]
+title = "Paper lantern"
+"label" = 'Warm light'
+enabled = true
+count = 42
+items = ["one", "two"]
+created = 2026-09-15
+nested = { style = "soft" }
