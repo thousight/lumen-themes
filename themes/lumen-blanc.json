@@ -119,7 +119,7 @@
     "editorBracketHighlight.foreground2": "#a04a3a",
     "editorBracketHighlight.foreground3": "#4a6d6c",
     "editorBracketHighlight.foreground4": "#6a4a7a",
-    "editorBracketHighlight.foreground5": "#48634b",
+    "editorBracketHighlight.foreground5": "#5a765c",
     "editorBracketHighlight.foreground6": "#9aa5b0",
     "terminal.background": "#f7f7f4",
     "widget.shadow": "#00000000",
@@ -275,7 +275,7 @@
         "string.quoted.single.php"
       ],
       "settings": {
-        "foreground": "#48634b"
+        "foreground": "#5a765c"
       }
     },
     {
@@ -381,7 +381,7 @@
         "punctuation.definition.raw.markdown"
       ],
       "settings": {
-        "foreground": "#48634b"
+        "foreground": "#5a765c"
       }
     },
     {

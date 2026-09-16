@@ -3,7 +3,7 @@ import path from "node:path";
 
 const root = path.resolve(import.meta.dirname, "..");
 for (const [slug, background, statusBackground, tokenColors] of [
-  ["blanc", "#f7f7f4", "#f7f7f4", "#a04a3a,#496d91,#48634b"],
+  ["blanc", "#f7f7f4", "#f7f7f4", "#a04a3a,#496d91,#5a765c"],
   ["noir", "#26251e", "#26251e", "#f54e00,#7eb6f6,#99c794"],
 ]) {
   for (const semanticMode of ["true", "false"]) {
