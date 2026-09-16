@@ -1,3 +1,9 @@
+## [0.4.3](https://github.com/thousight/lumen-themes/compare/v0.4.2...v0.4.3) (2026-09-16)
+
+### Bug Fixes
+
+* **theme:** improve language syntax and tab states ([#13](https://github.com/thousight/lumen-themes/issues/13)) ([5868fda](https://github.com/thousight/lumen-themes/commit/5868fda119e1d534a6546652da49ab287e97e03e))
+
 ## [0.4.2](https://github.com/thousight/lumen-themes/compare/v0.4.1...v0.4.2) (2026-09-15)
 
 ### Bug Fixes
