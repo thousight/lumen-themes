@@ -41,7 +41,7 @@ Built-in diagnostics and input validation distinguish muted red errors, amber wa
 | Keywords | Muted red | International Orange |
 | Functions, configuration keys, properties, markup attributes | Muted blue | Soft blue |
 | CSS selectors and configuration section headings | Muted teal | International Orange |
-| Strings | Dark green | Soft green |
+| Strings | Muted green `#48634b` | Soft green |
 | Constants | Muted purple | Soft purple |
 
 Use ordinary font weight and style for programming syntax; bold and italics are allowed for markup structure. Both variants enable semantic highlighting. Review TextMate rules and semantic token rules together so language-server highlighting preserves the intended hierarchy.

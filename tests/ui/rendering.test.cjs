@@ -140,7 +140,7 @@ describe("Lumen rendering", function () {
   const light = process.env.LUMEN_THEME_SLUG === "blanc";
   const palette = {
     key: light ? "#496d91" : "#7eb6f6",
-    string: light ? "#32402f" : "#99c794",
+    string: light ? "#48634b" : "#99c794",
     constant: light ? "#6a4a7a" : "#c594c5",
     tag: light ? "#4a6d6c" : "#f54e00",
     comment: light ? "#706d6b" : "#909090",
