@@ -1,0 +1,9 @@
+/* Selectors, properties, named values, and custom properties */
+.lantern#preview:hover::before {
+  display: block;
+  color: rebeccapurple;
+  font-family: serif;
+  content: "Warm light";
+  --spacing: 12px;
+  padding: var(--spacing);
+}

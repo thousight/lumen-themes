@@ -26,6 +26,8 @@ Blanc uses neutral selection and hover backgrounds and a muted syntax palette. P
 
 Noir combines a neutral workbench with orange control-flow and action accents. Its cursor is neutral. Syntax, bracket colors, Git decorations, diagnostics, and terminal ANSI colors also use muted hues. Earlier monochromatic-only plans describe historical intent, not the current palette.
 
+Blanc marks the active editor tab with a muted blue bottom border and a paper-gray background; inactive tabs share the warm-white primary surface. Noir uses a lighter dark-neutral active tab with an orange bottom border; inactive tabs share the dark-neutral primary surface. Unfocused active indicators are softened in both variants.
+
 Remote status indicators retain the primary surface with action-accent text.
 
 Inputs, dropdowns, and editor widgets share the primary surface and subtle borders. Menus, checkboxes, the Command Palette, suggestions, hovers, and notifications inherit these shared colors. Selected rows retain the theme's normal text color on neutral selection backgrounds. Preserve VS Code's derived hover and inactive colors where they already follow the palette.
@@ -37,13 +39,16 @@ Built-in diagnostics and input validation distinguish muted red errors, amber wa
 | Syntax role | Blanc | Noir |
 | --- | --- | --- |
 | Keywords | Muted red | International Orange |
-| Functions | Muted blue | Soft blue |
+| Functions, configuration keys, properties, markup attributes | Muted blue | Soft blue |
+| CSS selectors and configuration section headings | Muted teal | International Orange |
 | Strings | Dark green | Soft green |
 | Constants | Muted purple | Soft purple |
 
 Use ordinary font weight and style for programming syntax; bold and italics are allowed for markup structure. Both variants enable semantic highlighting. Review TextMate rules and semantic token rules together so language-server highlighting preserves the intended hierarchy.
 
-Prefer broad conventional scopes with narrow language-specific additions when needed. Use `samples/` to inspect TypeScript/TSX, Python, Rust, C++, PHP, shell, and Markdown. These are visual fixtures, not an executable test suite or a guarantee of every language's support.
+Prefer broad conventional scopes with narrow language-specific additions when needed. Use [the sample index](../samples/README.md) to inspect configuration formats, CSS, HTML/XML/SVG, JavaScript/JSX, TypeScript/TSX, Python, Rust, C++, PHP, shell, and Markdown. These are visual fixtures, not an executable test suite or a guarantee of every language's support.
+
+JSON key quotes follow key colors; string values remain green and literals purple. CSS named values use the constant palette. JS/TS properties use blue in both TextMate and language-specific semantic rules, including readonly properties. YAML retains its existing tag-colored keys. TOML and dotenv coverage depends on the pinned grammars listed with the samples.
 
 ## Readability and integrations
 

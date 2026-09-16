@@ -1,0 +1,10 @@
+# Plain and quoted keys, anchors, and block strings
+ title: Paper lantern
+ "label": "Warm light"
+ enabled: true
+ count: 42
+ defaults: &defaults
+   style: soft
+ copy: *defaults
+ message: |
+   Paper and light

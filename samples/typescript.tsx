@@ -24,3 +24,10 @@ export const VerificationComponent: React.FC<{ title: string }> = ({ title }) =>
     </div>
   );
 };
+
+// Property fallbacks and readonly semantic tokens.
+const lantern: { readonly label: string; title: string } = {
+  label: "Warm light",
+  title: "Paper lantern",
+};
+console.log(lantern.label, lantern.title);

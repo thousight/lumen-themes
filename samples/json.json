@@ -1,0 +1,9 @@
+{
+  "title": "Paper lantern",
+  "enabled": true,
+  "count": 42,
+  "missing": null,
+  "nested": { "label": "Warm light" },
+  "items": ["one", "two"],
+  "escaped": "line\nquote\""
+}
